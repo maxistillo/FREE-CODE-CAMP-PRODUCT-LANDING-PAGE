@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="LANDING.CSS" />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="https://www.guitar-decals.com/images/source/15GCP-GLE.jpg"
+        alt="gibson-logo"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#form" class="nav-link">Register</a></li>
+          <li><a href="#video" class="nav-link">Video</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main">
+      <h1>We make history</h1>
+
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/PCKUL8zzYB0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h2>Subscribe to recieve the latest news</h2>
+        <label id="email-label" for="email">Email</label> <br />
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Enter your e-mail"
+          required
+        />
+        <br />
+        <input
+          type="submit"
+          id="submit"
+          value="Send!"
+          formaction="https://www.freecodecamp.com/email-submit"
+        />
+      </form>
+      <div id="products">
+        <div class="instruments" id="acoustic">
+          <h2>Acoustic Guitar</h2>
+          <img
+            src="https://www.soundaffects.com/images/products/1592577824-25179600.jpg"
+            alt="acoustic guitar"
+          />
+          <p>$500</p>
+        </div>
+
+        <div class="instruments" id="electric">
+          <h2>Electric Guitar</h2>
+          <img
+            src="https://images.reverb.com/image/upload/s--qmSCoZz4--/f_auto,t_supersize/v1567712227/upx6u7rp2qtl78yqz9io.jpg"
+            alt="Electric guitar"
+          />
+          <p>$1000</p>
+        </div>
+
+        <div class="instruments" id="bass">
+          <h2>Bass</h2>
+          <img
+            src="https://max.guitars/media/catalog/product/cache/72269915de88ed6ece6209277c94ce43/o/v/ov-cf_ev.jpeg"
+            alt="Bass"
+          />
+          <p>$1000</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
